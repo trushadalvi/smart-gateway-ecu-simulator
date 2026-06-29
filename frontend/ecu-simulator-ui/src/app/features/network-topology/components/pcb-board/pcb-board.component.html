@@ -1,0 +1,121 @@
+<div class="pcb-board">
+
+  <div class="mount-hole top-left"></div>
+  <div class="mount-hole top-right"></div>
+  <div class="mount-hole bottom-left"></div>
+  <div class="mount-hole bottom-right"></div>
+  <div class="board-title">
+  GATEWAY ECU
+</div>
+
+<div class="board-subtitle">
+  RH850 Automotive Network Controller
+</div>
+
+<div class="board-revision">
+  REV A • CAN FD READY
+</div>
+
+  <svg class="pcb-traces">
+    <line x1="120" y1="240" x2="210" y2="140"></line>
+    <line x1="590" y1="240" x2="590" y2="320"></line>
+    <line x1="200" y1="320" x2="1040" y2="320"></line>
+
+    <line x1="210" y1="420" x2="210" y2="500"></line>
+    <line x1="360" y1="420" x2="360" y2="500"></line>
+    <line x1="510" y1="420" x2="510" y2="500"></line>
+    <line x1="660" y1="420" x2="660" y2="500"></line>
+    <line x1="810" y1="420" x2="810" y2="500"></line>
+    <line x1="960" y1="420" x2="960" y2="500"></line>
+
+    <line x1="210" y1="560" x2="210" y2="620"></line>
+    <line x1="360" y1="560" x2="360" y2="620"></line>
+    <line x1="510" y1="560" x2="510" y2="620"></line>
+    <line x1="660" y1="560" x2="660" y2="620"></line>
+    <line x1="810" y1="560" x2="810" y2="620"></line>
+    <line x1="960" y1="560" x2="960" y2="620"></line>
+
+  </svg>
+
+  @for(component of components; track component.id) {
+
+    <div
+      class="pcb-component"
+      [class.power]="component.type === 'power'"
+      [class.mcu]="component.type === 'mcu'"
+      [class.memory]="component.type === 'memory'"
+      [class.can-controller]="component.type === 'can-controller'"
+      [class.transceiver]="component.type === 'transceiver'"
+      [class.connector]="component.type === 'connector'"
+      [style.left.px]="component.x"
+      [style.top.px]="component.y">
+
+      @if(component.type === 'mcu') {
+
+        <div class="pin-row top">
+          @for(pin of [1,2,3,4,5,6,7,8,9,10]; track pin) {
+            <span class="pin"></span>
+          }
+        </div>
+
+      }
+
+      <div class="reference-designator">
+
+        @switch(component.type) {
+
+          @case('mcu') { U1 }
+
+          @case('memory') { U2 }
+
+          @case('power') { U3 }
+
+          @case('can-controller') { U10 }
+
+          @case('transceiver') { U20 }
+
+          @case('connector') { J1 }
+
+        }
+
+      </div>
+
+      <div class="component-name">
+        {{ component.name }}
+      </div>
+
+      <div class="component-type">
+        {{ component.type }}
+      </div>
+      @if(component.type === 'connector') {
+
+  @if(component.id === 'vin') {
+
+  <span>12V</span>
+  <span>GND</span>
+
+} @else {
+
+  <span>CANH</span>
+  <span>CANL</span>
+  <span>GND</span>
+
+}
+
+}
+
+      @if(component.type === 'mcu') {
+
+        <div class="pin-row bottom">
+          @for(pin of [1,2,3,4,5,6,7,8,9,10]; track pin) {
+            <span class="pin"></span>
+          }
+        </div>
+
+      }
+
+    </div>
+
+  }
+
+</div>
