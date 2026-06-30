@@ -1,0 +1,35 @@
+.timeline{
+
+display:flex;
+
+gap:18px;
+
+overflow:auto;
+
+padding:20px;
+
+margin-top:16px;
+
+border-radius:12px;
+
+background:#041a2d;
+
+border:1px solid #0f4d7f;
+
+}
+
+.step{
+
+min-width:180px;
+
+padding:18px;
+
+text-align:center;
+
+border-radius:8px;
+
+border:1px solid #0f6db8;
+
+background:#061b2f;
+
+}

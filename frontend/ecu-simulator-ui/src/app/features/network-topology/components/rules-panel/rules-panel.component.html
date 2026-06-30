@@ -1,0 +1,108 @@
+<div class="rules-panel">
+
+    <div class="panel-title">
+        GATEWAY LOGIC — DEPENDENCY RULES
+    </div>
+
+    <div class="rule-card">
+
+        <div class="rule-icon">
+            ⚙️
+        </div>
+
+        <div class="rule-info">
+
+            <div class="rule-name">
+                RULE 1 — ENGINE START
+            </div>
+
+            <div class="rule-condition">
+                Door Closed AND Brake Pressed
+            </div>
+
+        </div>
+
+        <div class="rule-status success">
+            PASSED ✓
+        </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+        <div class="rule-icon bulb">
+            💡
+        </div>
+
+        <div class="rule-info">
+
+            <div class="rule-name">
+                RULE 2 — HEADLAMP ON
+            </div>
+
+            <div class="rule-condition">
+                Engine Running AND Door Closed
+            </div>
+
+        </div>
+
+        <div class="rule-status success">
+            PASSED ✓
+        </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+        <div class="rule-icon speed">
+            🏎️
+        </div>
+
+        <div class="rule-info">
+
+            <div class="rule-name">
+                RULE 3 — SPEED VALID
+            </div>
+
+            <div class="rule-condition">
+                Engine Running
+            </div>
+
+        </div>
+
+        <div class="rule-status success">
+            PASSED ✓
+        </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+        <div class="rule-icon antenna">
+            📡
+        </div>
+
+        <div class="rule-info">
+
+            <div class="rule-name">
+                RULE 4 — TELEMATICS ACTIVE
+            </div>
+
+            <div class="rule-condition">
+                Door Closed AND Engine Running AND
+                Headlamp ON AND Speed > 0 AND
+                Battery Healthy
+            </div>
+
+        </div>
+
+        <div class="rule-status failed">
+            FAILED ✕
+        </div>
+
+    </div>
+
+</div>

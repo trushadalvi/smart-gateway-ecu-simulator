@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-status-footer',
+  imports: [],
+  templateUrl: './status-footer.component.html',
+  styleUrl: './status-footer.component.scss'
+})
+export class StatusFooterComponent {
+
+}

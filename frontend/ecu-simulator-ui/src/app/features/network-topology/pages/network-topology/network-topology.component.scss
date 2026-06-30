@@ -1,0 +1,83 @@
+.simulation-page {
+
+  background: #06111f;
+
+  min-height: 100vh;
+
+  padding: 10px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+}
+
+
+.top-section {
+
+  display: grid;
+
+  grid-template-columns:
+
+      250px
+      minmax(0, 1fr)
+      290px;
+
+  gap: 18px;
+
+  align-items: start;
+
+}
+
+
+.center-column {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+}
+
+
+app-control-panel,
+app-rules-panel {
+
+  display: block;
+
+  align-self: start;
+
+}
+
+
+app-gateway-board {
+
+  display: block;
+
+  align-self: start;
+
+}
+
+
+app-can-log {
+
+  margin-top: 4px;
+
+}
+
+
+app-event-timeline {
+
+  margin-top: 4px;
+
+}
+
+
+app-status-footer {
+
+  margin-top: 4px;
+
+}

@@ -1,0 +1,77 @@
+.header{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:12px 18px;
+
+background:#08182b;
+
+border:1px solid rgba(0,220,255,.15);
+
+border-radius:10px;
+
+height:56px;
+
+}
+
+
+.brand{
+
+font-size:18px;
+
+font-weight:700;
+
+color:white;
+
+}
+
+
+.status{
+
+padding:6px 16px;
+
+border-radius:30px;
+
+background:#0d2b18;
+
+border:1px solid #16ff68;
+
+color:#16ff68;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+}
+
+
+.actions{
+
+display:flex;
+
+gap:10px;
+
+}
+
+
+.actions button{
+
+background:#0b2035;
+
+border:1px solid rgba(0,220,255,.2);
+
+color:white;
+
+padding:8px 18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}

@@ -1,0 +1,65 @@
+<div class="gateway-container">
+
+    <div class="board-title">
+        VIRTUAL GATEWAY ECU PCB
+    </div>
+
+    <div class="pcb">
+
+        <div class="power">
+            POWER
+        </div>
+
+        <div class="leds">
+
+            <div class="led green"></div>
+            <div class="led green"></div>
+            <div class="led red"></div>
+
+        </div>
+
+        <div class="mcu">
+
+            RH850
+
+            <span>MCU</span>
+
+        </div>
+        <div class="trace"></div>
+        <div class="can-row">
+
+            @for(i of [1,2,3,4,5,6]; track i){
+
+            <div class="can-stack">
+
+                <div class="controller">
+
+                    MCP2515
+
+                    <small>CAN Controller</small>
+
+                </div>
+
+                <div class="transceiver">
+
+                    TJA1051
+
+                    <small>Transceiver</small>
+
+                </div>
+
+                <div class="connector">
+
+                    CAN {{i}}
+
+                </div>
+
+            </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</div>

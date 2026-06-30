@@ -1,0 +1,147 @@
+.rules-panel {
+
+  background: #071624;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(0,220,255,.15);
+
+  min-height: 500px;
+
+}
+
+
+.panel-title {
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: #627ca1;
+
+  margin-bottom: 18px;
+
+}
+
+
+.rule-card {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 12px 14px;
+
+  margin-bottom: 10px;
+
+  min-height: 72px;
+
+  border-radius: 12px;
+
+  background: #0d2038;
+
+  border: 1px solid rgba(0,220,255,.12);
+
+  transition: .25s;
+
+}
+
+
+.rule-card:hover {
+
+  border-color: rgba(0,220,255,.30);
+
+}
+
+
+.rule-icon {
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 10px;
+
+  background: #1d2940;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 17px;
+
+  flex-shrink: 0;
+
+}
+
+
+.rule-info {
+
+  flex: 1;
+
+  min-width: 0;
+
+}
+
+
+.rule-name {
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  color: white;
+
+  line-height: 1.15;
+
+  margin-bottom: 4px;
+
+}
+
+
+.rule-condition {
+
+  font-size: 13px;
+
+  line-height: 1.35;
+
+  color: #b8c4d3;
+
+}
+
+
+.rule-status {
+
+  margin-left: auto;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+}
+
+
+.success {
+
+  color: #18ff68;
+
+}
+
+
+.failed {
+
+  color: #ff4040;
+
+}
